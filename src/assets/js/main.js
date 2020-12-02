@@ -81,7 +81,13 @@
 	});
 
 	// Nice Select JS
+	//$('select').niceSelect();
+
 	$('select').niceSelect();
+
+	//custom
+	$(".main-search-wrap .list").css("height", "auto");
+	//custom
 
 	// Listing Slides
 	$('.listing-slides').owlCarousel({
