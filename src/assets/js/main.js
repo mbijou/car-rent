@@ -86,7 +86,7 @@
 	$('select').niceSelect();
 
 	//custom
-	$(".main-search-wrap .list").css("height", "auto");
+	$(".main-search-wrap .locations_dropdown .list").css("height", "auto");
 	//custom
 
 	// Listing Slides

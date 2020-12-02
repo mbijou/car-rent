@@ -3,7 +3,7 @@
 <div class="page-title-area page-title-bg1">
     <div class="container">
         <div class="page-title-content">
-            <h2>Listing</h2>
+            <h2>Fahrzeuge</h2>
         </div>
     </div>
 </div>
@@ -11,68 +11,29 @@
 <section class="listing-area ptb-100">
     <div class="container">
         <div class="row">
+
             <div class="col-lg-4 col-md-12">
                 <div class="listing-widget-area">
-                    <div class="listing-widget filter-list-widget">
-                        <h3 class="listing-widget-title">Current Selection</h3>
-
-                        <div class="selected-filters-wrap-list">
-                            <ul>
-                                <li><a routerLink="/"><i class='bx bx-x'></i> Free WiFi</a></li>
-                                <li><a routerLink="/"><i class='bx bx-x'></i> Shops</a></li>
-                                <li><a routerLink="/"><i class='bx bx-x'></i> Hospital</a></li>
-                                <li><a routerLink="/"><i class='bx bx-x'></i> Free Parking</a></li>
-                            </ul>
-
-                            <a routerLink="/" class="delete-selected-filters"><i class='bx bx-trash'></i> <span>Clear All</span></a>
-                        </div>
-                    </div>
-
-                    <div class="listing-widget facilities-list-widget">
-                        <h3 class="listing-widget-title">Facilities</h3>
-
-                        <ul class="facilities-list-row">
-                            <li><a routerLink="/">Free WiFi</a></li>
-                            <li class="active"><a routerLink="/" class="active">Free Parking</a></li>
-                            <li><a routerLink="/">Wireless Internet</a></li>
-                            <li><a routerLink="/">Instant Book</a></li>
-                            <li><a routerLink="/">Smoking Allowed</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="listing-widget price-list-widget">
-                        <h3 class="listing-widget-title">Price</h3>
-
-                        <div class="collection-filter-by-price">
-                            <input class="js-range-of-price" type="text" data-min="0" data-max="1055" name="filter_by_price" data-step="10">
-                        </div>
-                    </div>
 
                     <div class="listing-widget categories-list-widget">
-                        <h3 class="listing-widget-title">Categories</h3>
+                        <h3 class="listing-widget-title">Standorte</h3>
+                        <div class="form-group">
+                            <select>
+                                <option>All Standorte</option>
+                                <option>Offenbach am Main</option>
+                            </select>
+                        </div>
+                        <br/>
+                        <br/>
+                    </div>
+                    <div class="listing-widget categories-list-widget">
+                        <h3 class="listing-widget-title">Kategorie</h3>
 
                         <ul class="categories-list-row">
-                            <li><a routerLink="/">Shops</a></li>
-                            <li><a routerLink="/">Hotels</a></li>
-                            <li><a routerLink="/">Restaurants</a></li>
-                            <li class="active"><a routerLink="/">Fitness</a></li>
-                            <li><a routerLink="/">Events</a></li>
-                            <li><a routerLink="/">Services</a></li>
-                            <li><a routerLink="/">Hospital</a></li>
-                            <li><a routerLink="/">Others</a></li>
+                            <li><a routerLink="/">Pkws</a></li>
+                            <li><a routerLink="/">Transporter</a></li>
                         </ul>
-                    </div>
 
-                    <div class="listing-widget aside-trending-widget">
-                        <div class="aside-trending-products">
-                            <img src="assets/img/listing/img1.jpg" alt="image">
-
-                            <div class="category">
-                                <h3>Top Listing</h3>
-                                <span>Spring/Summer 2020 Collection</span>
-                            </div>
-                            <a routerLink="/listing-one" class="link-btn"></a>
-                        </div>
                     </div>
                 </div>
             </div>
