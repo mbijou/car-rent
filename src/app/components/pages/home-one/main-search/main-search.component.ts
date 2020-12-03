@@ -9,6 +9,7 @@ import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 export class MainSearchComponent {
   model: NgbDateStruct;
+  model2: NgbDateStruct;
 }
 
 
