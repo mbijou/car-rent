@@ -36,7 +36,7 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainSearchComponent } from './components/pages/home-one/main-search/main-search.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -76,7 +76,8 @@ import { MainSearchComponent } from './components/pages/home-one/main-search/mai
     BrowserModule,
     AppRoutingModule,
     NgxTypedJsModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

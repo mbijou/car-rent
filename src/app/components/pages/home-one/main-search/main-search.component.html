@@ -4,10 +4,12 @@
         <div class="row">
             <div class="col-lg-2 col-md-12">
                     <div class="form-group">
+                        <label><i class="bx bxs-calendar" (click)="d.toggle()"></i></label>
+
                         <div class="input-group">
-                            <label><i class="bx bxs-calendar" (click)="d.toggle()"></i></label>
+
                             <input class="form-control" placeholder="yyyy-mm-dd"
-                                   name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                                   name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()">
                         </div>
                     </div>
             </div>
@@ -48,15 +50,12 @@
                     </select>
                 </div>
             </div>
-
-
             <div class="col-lg-2 col-md-12">
                 <div class="form-group">
                     <label><i class='bx bxs-calendar'></i></label>
                     <input type="text" placeholder="Datum Nach" class="date_input">
                 </div>
             </div>
-
             <div class="col-lg-2 col-md-12">
                 <div class="form-group">
                     <label><i class='bx bxs-time'></i></label>
@@ -93,8 +92,6 @@
                     </select>
                 </div>
             </div>
-
-
             <div class="col-lg-4 col-md-12">
                 <div class="form-group locations_dropdown">
                     <label><i class='bx bx-current-location'></i></label>
