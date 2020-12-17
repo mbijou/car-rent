@@ -37,6 +37,7 @@ import { RegisterComponent } from './components/pages/register/register.componen
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MainSearchComponent } from './components/pages/home-one/main-search/main-search.component';
 import { FormsModule } from '@angular/forms';
+import { DatepickerModule } from "../datepicker/datepicker.module";
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NgxTypedJsModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    DatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

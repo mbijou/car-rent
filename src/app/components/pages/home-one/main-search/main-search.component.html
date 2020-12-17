@@ -2,13 +2,16 @@
 <div class="main-search-wrap">
     <form>
         <div class="row">
+
             <div class="col-lg-2 col-md-12">
+                <app-date-range-from-popup></app-date-range-from-popup>
+                <!--
                     <div class="form-group">
                         <label><i class="bx bxs-calendar" (click)="d1.toggle()"></i></label>
                             <input class="form-control" placeholder="yyyy-mm-dd"
                                    name="dp" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()">
-
                     </div>
+                -->
             </div>
 
             <div class="col-lg-2 col-md-12">
@@ -48,6 +51,8 @@
                 </div>
             </div>
             <div class="col-lg-2 col-md-12">
+                <app-date-range-to-popup></app-date-range-to-popup>
+                <!--
                 <div class="form-group">
                     <label><i class="bx bxs-calendar" (click)="d2.toggle()"></i></label>
 
@@ -55,6 +60,7 @@
                            name="dp" [(ngModel)]="model2" ngbDatepicker #d2="ngbDatepicker" (click)="d2.toggle()">
 
                 </div>
+                -->
             </div>
             <div class="col-lg-2 col-md-12">
                 <div class="form-group">
@@ -96,7 +102,7 @@
                 <div class="form-group locations_dropdown">
                     <label><i class='bx bx-current-location'></i></label>
                     <select>
-                        <option>All Standorte</option>
+                        <option>Alle Standorte</option>
                         <option>Offenbach am Main</option>
                     </select>
                 </div>
