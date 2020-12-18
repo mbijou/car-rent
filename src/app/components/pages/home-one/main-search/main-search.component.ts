@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import {DateRangeService} from './date-range.service';
 
 @Component({
   selector: 'app-main-search',
@@ -8,8 +9,8 @@ import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
   )
 
 export class MainSearchComponent {
-  model1: NgbDateStruct;
-  model2: NgbDateStruct;
+  constructor(public dateRangeService: DateRangeService) {}
+
 }
 
 

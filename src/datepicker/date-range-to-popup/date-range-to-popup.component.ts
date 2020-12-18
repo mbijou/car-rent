@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import {Component, Input, OnInit} from '@angular/core';
 import {
   NgbDate,
   NgbCalendar,
@@ -12,7 +12,9 @@ import { DateRangeService } from "../date-range.service";
   styleUrls: ["./date-range-to-popup.component.css"]
 })
 export class DateRangeToPopupComponent implements OnInit {
-  constructor(public dateRangeService: DateRangeService) {}
+  @Input() dateRangeService: DateRangeService;
+
+  constructor() {}
 
   onDateSelection(date: NgbDate, datepicker: any) {}
 

@@ -4,7 +4,7 @@
         <div class="row">
 
             <div class="col-lg-2 col-md-12">
-                <app-date-range-from-popup></app-date-range-from-popup>
+                <app-date-range-from-popup [dateRangeService]="dateRangeService"></app-date-range-from-popup>
                 <!--
                     <div class="form-group">
                         <label><i class="bx bxs-calendar" (click)="d1.toggle()"></i></label>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="col-lg-2 col-md-12">
-                <app-date-range-to-popup></app-date-range-to-popup>
+                <app-date-range-to-popup [dateRangeService]="dateRangeService"></app-date-range-to-popup>
                 <!--
                 <div class="form-group">
                     <label><i class="bx bxs-calendar" (click)="d2.toggle()"></i></label>

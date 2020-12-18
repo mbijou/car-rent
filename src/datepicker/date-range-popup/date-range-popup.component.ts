@@ -46,12 +46,16 @@ export class DateRangePopupComponent {
   @Input() isDatePickerFrom: boolean;
   @Input() pickedDate: NgbDate;
 
+  @Input() dateRangeService: DateRangeService;
+
+
   @Input() terminateDateSelection(date: NgbDate, datepicker): boolean {
     return false;
   }
   @Input() dateIsInvalid(date: NgbDate): boolean {
     return false;
   }
+
   @Input() setDateTo(date: NgbDate, datepicker: any): boolean {
     return null;
   }
@@ -59,8 +63,8 @@ export class DateRangePopupComponent {
   constructor(
     private calendar: NgbCalendar,
     public formatter: NgbDateParserFormatter,
-    public dateRangeService: DateRangeService
-  ) {}
+  ) {
+  }
 
   onDateSelection(date: NgbDate, datepicker: any) {
     let terminateDateSelection = this.terminateDateSelection(date, datepicker);
