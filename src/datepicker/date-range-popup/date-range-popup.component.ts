@@ -45,6 +45,7 @@ export class DateRangePopupComponent {
 
   @Input() isDatePickerFrom: boolean;
   @Input() pickedDate: NgbDate;
+  @Input() label: string;
 
   @Input() dateRangeService: DateRangeService;
 

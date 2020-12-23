@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateRangeService } from './date-range.service';
 
 @Component({
   selector: 'app-listing-one',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListingOneComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dateRangeService: DateRangeService) { }
 
   ngOnInit(): void {
   }

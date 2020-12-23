@@ -9,6 +9,7 @@ import { DateRangeService } from "../date-range.service";
 })
 export class DateRangeFromPopupComponent implements OnInit {
   @Input() dateRangeService: DateRangeService;
+  @Input() label: string;
 
   constructor() {}
 
